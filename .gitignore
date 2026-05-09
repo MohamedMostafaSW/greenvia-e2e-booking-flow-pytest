@@ -48,3 +48,12 @@ build/
 dist/
 *.egg-info/
 .eggs/
+.vscode/
+.claude/
+.idea/
+.vscode/
+.claude/
+__pycache__/
+.pytest_cache/
+venv/
+.venv/
