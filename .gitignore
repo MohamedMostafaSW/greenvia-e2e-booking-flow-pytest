@@ -42,6 +42,8 @@ greenvia_e2e/debug_popup.html
 *~
 .DS_Store
 Thumbs.db
+.vscode/
+.claude/
 
 # ── Build / packaging ────────────────────────────────────────────────
 build/
