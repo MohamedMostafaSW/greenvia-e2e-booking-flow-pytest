@@ -42,7 +42,15 @@
       "Bash(grep -nE \"\\\\\\\\bBy\\\\\\\\.|\\\\\\\\bEC\\\\\\\\.|\\\\\\\\bSelect\\\\\\\\\\(|valid_jpeg|NATIONALITY_VALUE|VISA_TYPE\" \"tests/main_flow.py\")",
       "Bash(PYTHONIOENCODING=utf-8 TRIP_DATE=2026-06-01 \"C:/Users/Mohamed Mostafa/Downloads/greenvia_e2e/.venv/Scripts/python.exe\" tests/main_flow.py)",
       "Bash(grep -nE \"\\\\\\\\bBy\\\\\\\\.|\\\\\\\\bEC\\\\\\\\.|\\\\\\\\bSelect\\\\\\\\\\(|create_driver|Reporter\\\\\\\\\\(|Path\\\\\\\\\\(|reports_dir|driver\\\\\\\\.quit\" tests/main_flow.py)",
-      "Bash(PYTHONIOENCODING=utf-8 TRIP_DATE=2026-06-21 \"C:/Users/Mohamed Mostafa/Downloads/greenvia_e2e/.venv/Scripts/python.exe\" -m pytest -v)"
+      "Bash(PYTHONIOENCODING=utf-8 TRIP_DATE=2026-06-21 \"C:/Users/Mohamed Mostafa/Downloads/greenvia_e2e/.venv/Scripts/python.exe\" -m pytest -v)",
+      "Bash(grep -E \"gitignore|\\\\.git$\")",
+      "Bash(git ls-tree *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(PYTHONIOENCODING=utf-8 \"C:/Users/Mohamed Mostafa/Downloads/greenvia_e2e/.venv/Scripts/python.exe\" -m pytest -v tests/test_signup_negative.py)"
     ]
   }
 }
