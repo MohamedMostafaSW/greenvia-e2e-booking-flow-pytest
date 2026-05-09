@@ -1,0 +1,33 @@
+# Project-level fallback .gitignore (in case the repo is rooted here
+# instead of one level up).
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.coverage
+
+# Generated reports / screenshots
+reports/*.html
+reports/screenshots/*
+!reports/screenshots/.gitkeep
+debug_popup.html
+
+# Sensitive — never commit
+.env
+.env.*
+!.env.example
+fixtures/session_cookies.json
+fixtures/credentials.txt
+fixtures/files/*
+!fixtures/files/.gitkeep
+
+# IDE
+.idea/workspace.xml
+.idea/shelf/
+.vscode/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
