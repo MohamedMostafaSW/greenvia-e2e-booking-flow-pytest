@@ -1,0 +1,50 @@
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ── Virtualenv ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Pytest / coverage ────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ── Selenium / WebDriver caches ──────────────────────────────────────
+.wdm/
+
+# ── Test reports & artefacts (regenerated every run) ─────────────────
+greenvia_e2e/reports/main_flow_report.html
+greenvia_e2e/reports/pytest_report.html
+greenvia_e2e/reports/screenshots/
+greenvia_e2e/reports/report.html
+
+# Auto-generated upload fixtures
+greenvia_e2e/fixtures/files/
+
+# ── Local config & credentials ───────────────────────────────────────
+.env
+greenvia_e2e/.env
+greenvia_e2e/fixtures/session_cookies.json
+greenvia_e2e/fixtures/credentials.txt
+greenvia_e2e/debug_popup.html
+
+# ── IDE / editor ─────────────────────────────────────────────────────
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Build / packaging ────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+.eggs/

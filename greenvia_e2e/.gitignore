@@ -1,31 +1,26 @@
-# Project-level fallback .gitignore (in case the repo is rooted here
-# instead of one level up).
+# Project-level fallback .gitignore (the canonical one is at the repo root).
 
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.cache/
-.coverage
 
-# Generated reports / screenshots
+# Generated reports / screenshots — regenerated every run
 reports/*.html
 reports/screenshots/*
 !reports/screenshots/.gitkeep
-debug_popup.html
+
+# Auto-generated upload fixtures
+fixtures/files/*
+!fixtures/files/.gitkeep
 
 # Sensitive — never commit
 .env
 .env.*
 !.env.example
-fixtures/session_cookies.json
-fixtures/credentials.txt
-fixtures/files/*
-!fixtures/files/.gitkeep
 
 # IDE
 .idea/workspace.xml
 .idea/shelf/
-.vscode/*.log
 
 # OS
 .DS_Store
