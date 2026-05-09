@@ -17,8 +17,10 @@ from contextlib import contextmanager
 from pages.catalog_page import CatalogPage
 from pages.home_page import HomePage
 from pages.passenger_forms_page import PassengerFormsPage
+from pages.signup_popup_page import SignUpPopupPage
 from utils.config import cfg
 from utils.reporter import Reporter
+from utils.wait_helpers import wait_until_fully_loaded, wait_for_dom_stable
 
 
 class Runner:
@@ -32,6 +34,7 @@ class Runner:
         self.home    = HomePage(driver)
         self.catalog = CatalogPage(driver)
         self.forms   = PassengerFormsPage(driver)
+        self.signup  = SignUpPopupPage(driver)
 
     # ── Reporter passthroughs ─────────────────────────────────────────
     @contextmanager
@@ -44,3 +47,8 @@ class Runner:
 
     def note(self, text: str) -> None:
         self.reporter.note(text)
+
+    def wait_until_loaded(self) -> None:
+        wait_until_fully_loaded(self.driver)
+        wait_for_dom_stable(self.driver)
+
